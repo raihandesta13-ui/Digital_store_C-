@@ -13,5 +13,5 @@ A hilarious text-based grocery store simulation game built in C++, featuring inv
 2. Download or clone this repository.
 3. Open your terminal or command prompt in the folder containing the file, then run:
    ```bash
-./toko_mak_lampir
+   ./toko_mak_lampir
  
