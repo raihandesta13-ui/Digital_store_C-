@@ -11,28 +11,28 @@ class toko {
     void pegawai() {
         do {
         cout<< "*-----------------------------------*" << endl;
-        cout<< "| ATUR HARGA BARANG TOKO MAK LAMPIR |" << endl;
+        cout<< "| SET MA LAMPIR'S STORE ITEM PRICES |" << endl;
         cout<< "*-----------------------------------*" << endl;
-        cout<< "- Pilih barang yang mau diatur harganya." << endl;
+        cout<< "- Choose the item you want to reprice." << endl;
         cout<< "- Cheetos[1]" << endl;
         cout<< "- Soda[2]" << endl;
-        cout<< "- Keluar[3]" << endl;
+        cout<< "- Exit[3]" << endl;
         cout<< "> ";
         cin>> inputClass;
         cout<< endl;
         if (inputClass == 1) {
-            cout<< "Harga awal : " << cheetos << endl;
-            cout<< "Atur harga cheetos : ";
+            cout<< "Initial price : " << cheetos << endl;
+            cout<< "Set cheetos price : ";
             cin>> cheetos;
             cout<< endl;
-            cout<< "Balik ke menu utama ubah harga[1]" << endl;
+            cout<< "Back to price editing main menu[1]" << endl;
             cin>> inputClass2;
             if (inputClass2 == 1) {
                 continue;
             }
             else {
                 do {
-                  cout<< "input invalid!! input kembali." << endl;
+                  cout<< "invalid input!! input again." << endl;
                   cout<< ">";
                   cin>> inputClass2;
                 } while (inputClass2 != 1);
@@ -40,18 +40,18 @@ class toko {
             
         }
         else if (inputClass == 2) {
-            cout<< "Harga awal : " << soda << endl;
-            cout<< "Atur harga soda : ";
+            cout<< "Initial price : " << soda << endl;
+            cout<< "Set soda price : ";
             cin>> soda;
             cout<< endl;
-            cout<< "Balik ke menu utama ubah harga[1]" << endl;
+            cout<< "Back to price editing main menu[1]" << endl;
             cin>> inputClass2;
             if (inputClass2 == 1) {
                 continue;
             }
             else {
                 do {
-                  cout<< "input invalid!! input kembali." << endl;
+                  cout<< "invalid input!! input again." << endl;
                   cout<< ">";
                   cin>> inputClass2;
                 } while (inputClass2 != 1);
@@ -63,7 +63,7 @@ class toko {
         }
         else {
             do {
-            cout<< "input invalid!! input kembali." << endl;
+            cout<< "invalid input!! input again." << endl;
             cout<< ">";
             cin>> inputClass;
             } while (inputClass != 1);
@@ -119,11 +119,11 @@ int main()
     
     do {
     cout<< "*----------------------------------------*" << endl;
-    cout<< "| SELAMAT DATANG DI TOKO MAK LAMPIR      |" << endl;
+    cout<< "| WELCOME TO MA LAMPIR'S STORE           |" << endl;
     cout<< "*----------------------------------------*" << endl;
-    cout<< "| (opsi 1) : "; if (pegawai == 1) { cout<< "Jadi pegawai & info lebih   |" << endl; } else if (pegawai == 2 || pegawai == 0) { cout<< "jadi pegawai                |" << endl; } else { cout<< "Ubah harga                  |" << endl; }
-    cout<< "| (opsi 2) : Belanja                     |" << endl;
-    cout<< "| (opsi 3) : keluar                      |" << endl;
+    cout<< "| (option 1) : "; if (pegawai == 1) { cout<< "Become employee & extra info|" << endl; } else if (pegawai == 2 || pegawai == 0) { cout<< "become an employee          |" << endl; } else { cout<< "Change prices               |" << endl; }
+    cout<< "| (option 2) : Shop                      |" << endl;
+    cout<< "| (option 3) : exit                      |" << endl;
     cout<< "*----------------------------------------*" << endl;
     cout<< "> ";
     cin>> input;
@@ -136,22 +136,22 @@ int main()
         
         else if (pegawai == 1) {
             cout<< "-------------------------------------------------------------------------------------------------------" << endl;
-            cout<< "| SELAMAT DATANG DI WARUNG MAK LAMPIR SEBAGAI PEGAWAI! - WARUNG MAK LAMPIR CABANG NGAWI               |" << endl;
+            cout<< "| WELCOME TO MA LAMPIR'S SHOP AS AN EMPLOYEE! - MA LAMPIR'S SHOP NGAWI BRANCH                          |" << endl;
             cout<< "-------------------------------------------------------------------------------------------------------" << endl;
-            cout<< "| Selamat datang di warung Mak lampir, player! Mulai hari ini kamu resmi jadi bagian dari tim.        |" << endl;
-            cout<< "| Warung ini kecil, tapi kita punya banyak pelanggan setia karena pelayanan kita yang                 |" << endl; 
-            cout<< "| ramah dan kebersihan yang terjaga. Saya berharap kamu bisa betah kerja di sini.                     |" << endl;
-            cout<< "| Jangan ragu buat tanya ke saya atau teman-teman lain kalau ada yang belum paham, ya                 |" << endl;
-            cout<< "| Mari kita kerja sama dengan baik!.                                                                  |" << endl;
+            cout<< "| Welcome to Mak Lampir's shop, player! Starting today, you are officially part of the squad.           |" << endl;
+            cout<< "| This shop is small, but we have many loyal customers because of our friendly service                  |" << endl; 
+            cout<< "| and top-tier cleanliness. I hope you feel at home working here.                                     |" << endl;
+            cout<< "| Don't hesitate to ask me or the other crew members if anything is confusing, alright?                 |" << endl;
+            cout<< "| Let's work together real good!.                                                                     |" << endl;
             cout<< "|                                                                                                     |" << endl;
-            cout<< "| Nah, Player!                                                                                        |" << endl;;
-            cout<< "| untuk urusan gaji, di warung kita ini pakai sistem keikhlasan berbalas berkah.                      |" << endl;
-            cout<< "| Karena keuangan warung kita masih naik-turun seperti roller coaster,                                |" << endl;
-            cout<< "| setiap akhir bulan saya akan kasih amplop yang jumlahnya tergantung                                 |" << endl;
-            cout<< "| keuntungan warung dan keikhlasan saya sebagai manajer.                                              |" << endl;
+            cout<< "| Now, Player!                                                                                        |" << endl;;
+            cout<< "| Regarding salary, at our shop we use the 'sincere hearts, blessed returns' system.                  |" << endl;
+            cout<< "| Since our shop's finances go up and down like a roller coaster,                                     |" << endl;
+            cout<< "| every end of the month I'll hand you an envelope depending on                                       |" << endl;
+            cout<< "| the shop's profit and my sincerity as a manager.                                                    |" << endl;
             cout<< "-------------------------------------------------------------------------------------------------------" << endl;
-            cout<< "- Terima sebagai pegawai tetap[1]" << endl;
-            cout<< "- Tolak dan tetap sebagai pengganguran[2]" << endl;
+            cout<< "- Accept as permanent employee[1]" << endl;
+            cout<< "- Reject and remain unemployed[2]" << endl;
             cin>> input;
             if (input == 1) {
                 pegawai = 3;
@@ -159,12 +159,12 @@ int main()
             }
             else if (input == 2) {
                 pegawai = 2;
-                cout<< "*kami hargai keputusan anda" << endl;
+                cout<< "*we respect your life choices bro" << endl;
             }
             else {
                 pegawai = 3;
                 do {
-                  cout<< "input invalid!! input kembali." << endl;
+                  cout<< "invalid input!! input again." << endl;
                   cout<< ">";
                   cin>> input;
                 } while (input != 1);
@@ -173,17 +173,17 @@ int main()
         }
         else if (pegawai == 2 || pegawai == 0) {
         cout<< " ------------------------------------" << endl;
-        cout<< " |PERSYARATAN ADMINISTRASI (DOKUMEN)|" << endl;
+        cout<< " |ADMINISTRATIVE REQUIREMENTS (CV)  |" << endl;
         cout<< " ------------------------------------" << endl;
-        cout<< "- Surat lamaran pekerjaan (CV)" << endl;
-        cout<< "- Lulusan UGM S3 ekonomi      " << endl;
-        cout<< "- Berpenampilan menarik       " << endl;
-        cin.ignore();
-        cout<< " - Apakah persyaratan sudah sesuai dengan anda?" << endl;
+        cout<< "- Job application letter (CV)" << endl;
+        cout<< "- Graduated from UGM PhD in Economics" << endl;
+        cout<< "- Good looking / Attractive appearance" << endl;
+        cout<< cin.ignore();
+        cout<< " - Do these requirements match your profile?" << endl;
         getline(cin, input1);
-        if (input1.find("Iya") != string::npos || input1.find("iya") != string::npos || input1.find("yes") != string::npos || input1.find("ya") != string::npos ) {
-            cout<< "SELAMAT! ANDA LULUS SEBAGAI PEGAWAI" << endl;
-            cout<< "Balik ke menu utama [1]" << endl;
+        if (input1.find("Iya") != string::npos || input1.find("iya") != string::npos || input1.find("yes") != string::npos || input1.find("ya") != string::npos || input1.find("Yeah") != string::npos || input1.find("yep") != string::npos) {
+            cout<< "CONGRATS! YOU PASSED AS AN EMPLOYEE" << endl;
+            cout<< "Back to main menu [1]" << endl;
             cout<< ">";
             pegawai = 1;
             cin>> input;
@@ -192,16 +192,16 @@ int main()
             }
             else {
                 do {
-                  cout<< "input invalid!! input kembali." << endl;
+                  cout<< "invalid input!! input again." << endl;
                   cout<< ">";
                   cin>> input;
                 } while (input != 1);
             }
         }
         
-        else if (input1.find("Tidak") != string::npos || input1.find("tidak") != string::npos || input1.find("no") != string::npos) {
-            cout<< "MAAF. ANDA TIDAK LULUS SEBAGAI PEGAWAI" << endl;
-            cout<< "Balik ke menu utama [1]" << endl;
+        else if (input1.find("Tidak") != string::npos || input1.find("tidak") != string::npos || input1.find("no") != string::npos || input1.find("nah") != string::npos) {
+            cout<< "SORRY. YOU DID NOT PASS AS AN EMPLOYEE" << endl;
+            cout<< "Back to main menu [1]" << endl;
             cout<< ">";
             pegawai = 0;
             cin>> input;
@@ -210,7 +210,7 @@ int main()
             }
             else {
                 do {
-                  cout<< "input invalid!! input kembali." << endl;
+                  cout<< "invalid input!! input again." << endl;
                   cout<< ">";
                   cin>> input;
                 } while (input != 1);
@@ -221,32 +221,32 @@ int main()
     }
     else if (input == 2) {
     cout<< "*---------------------------------------*" << endl;
-    cout<< "| Stok Cheetos : " << player.jumlahCheetos << "                      |" << endl;
-    cout<< "| Stok Soda : " << player.jumlahSoda << "                         |" << endl;
+    cout<< "| Cheetos Stock : " << player.jumlahCheetos << "                  |" << endl;
+    cout<< "| Soda Stock : " << player.jumlahSoda << "                     |" << endl;
     cout<< "*---------------------------------------*" << endl;
     cout<< "*---------------------------------------*" << endl;
-    cout<< "| SELAMAT DATANG DI MENU PENJUALAN      |" << endl;
+    cout<< "| WELCOME TO THE SHOPPING MENU          |" << endl;
     cout<< "*---------------------------------------*" << endl;
-    cout<< "| - pilih barang yang ingin dibeli      |" << endl;
-    cout<< "|   Cheetos(" << player.cheetos << ")                      |" << endl;
-    cout<< "|   Soda(" << player.soda << ")                          |" << endl;
+    cout<< "| - select item you want to buy         |" << endl;
+    cout<< "|   Cheetos(" << player.cheetos << ")                   |" << endl;
+    cout<< "|   Soda(" << player.soda << ")                       |" << endl;
     cout<< "*---------------------------------------*" << endl;
     cout<< "> ";
     cin>> input1;
-    if (input1 == "Cheetos") {
-        cout<< "Berapa jumlah Cheetos yang ingin dibeli : ";
+    if (input1 == "Cheetos" || input1 == "cheetos") {
+        cout<< "How many Cheetos do you want to buy : ";
         cin>> inputjumlah;
         int hasilCek = jumlahCheetosCheck(&inputjumlah,&player);
         if (hasilCek == 2) {
-            cout<< "Maaf, cheeots yang anda beli tidak mencukupi stok.." << endl;
-            cout<< "balik ke menu[1]" << endl;
+            cout<< "Sorry bro, the cheetos you want to buy exceeds our stock.." << endl;
+            cout<< "back to menu[1]" << endl;
             cin>> input;
             if (input == 1) {
                 continue;
             }
             else {
-                while (!input == 1) {
-                    cout<< "Input invalid!" << endl;
+                while (input != 1) {
+                    cout<< "Invalid input!" << endl;
                     cout<< ">";
                     cin>> input;
                 }
@@ -254,19 +254,19 @@ int main()
         }
         else {
           cout<< " *************************" << endl;
-          cout<< " | PEMBAYARAN BERHASIL!! |" << endl;
+          cout<< " | PAYMENT SUCCESSFUL!!  |" << endl;
           cout<< " *************************" << endl;
-          cout<< " - Total pembayaran = " << player.cheetos * inputjumlah << endl;
-          cout<< " - barang : Cheetos x" << inputjumlah << endl;
-          cout<< " - sisa stok cheetos : " << player.jumlahCheetos << endl;
-          cout<< " - balik ke menu utama[1]" << endl;
+          cout<< " - Total payment = " << player.cheetos * inputjumlah << endl;
+          cout<< " - item : Cheetos x" << inputjumlah << endl;
+          cout<< " - remaining cheetos stock : " << player.jumlahCheetos << endl;
+          cout<< " - back to main menu[1]" << endl;
           cin>> input;
            if (input == 1) {
                 continue;
             }
             else {
-                while (!input == 1) {
-                    cout<< "Input invalid!" << endl;
+                while (input != 1) {
+                    cout<< "Invalid input!" << endl;
                     cout<< ">";
                     cin>> input;
                 }
@@ -274,40 +274,40 @@ int main()
         }
         
     }
-    else if (input1 == "Soda") {
-        cout<< "Berapa jumlah Soda yang ingin dibeli? : ";
+    else if (input1 == "Soda" || input1 == "soda") {
+        cout<< "How many Soda do you want to buy? : ";
         cin>> inputjumlah;
         int hasilCek = jumlahSodaCheck(&inputjumlah, &player);
         if (hasilCek == 1) {
           cout<< " *************************" << endl;
-          cout<< " | PEMBAYARAN BERHASIL!! |" << endl;
+          cout<< " | PAYMENT SUCCESSFUL!!  |" << endl;
           cout<< " *************************" << endl;
-          cout<< " - Total pembayaran = " << player.soda * inputjumlah << endl;
-          cout<< " - barang : Cheetos x" << inputjumlah << endl;
-          cout<< " - sisa stok cheetos : " << player.jumlahSoda << endl;
-          cout<< " - balik ke menu utama[1]" << endl;
+          cout<< " - Total payment = " << player.soda * inputjumlah << endl;
+          cout<< " - item : Soda x" << inputjumlah << endl;
+          cout<< " - remaining soda stock : " << player.jumlahSoda << endl;
+          cout<< " - back to main menu[1]" << endl;
           cin>> input;
            if (input == 1) {
                 continue;
             }
             else {
-                while (!input == 1) {
-                    cout<< "Input invalid!" << endl;
+                while (input != 1) {
+                    cout<< "Invalid input!" << endl;
                     cout<< ">";
                     cin>> input;
                 }
             }
         }
         else {
-            cout<< "Maaf, Soda yang anda beli tidak mencukupi stok.." << endl;
-            cout<< "balik ke menu[1]" << endl;
+            cout<< "Sorry bro, the Soda you want to buy exceeds our stock.." << endl;
+            cout<< "back to menu[1]" << endl;
             cin>> input;
             if (input == 1) {
                 continue;
             }
             else {
-                while (!input == 1) {
-                    cout<< "Input invalid!" << endl;
+                while (input != 1) {
+                    cout<< "Invalid input!" << endl;
                     cout<< ">";
                     cin>> input;
                 }
